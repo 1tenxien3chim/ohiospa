@@ -316,8 +316,7 @@ a,p,span,strong,del, label{
 @media (max-width: 1199px){
   .nav-container {
       overflow-x: hidden;      
-      background: var(--color-primary); /* background menu mobile */
-      padding-bottom: 100px;
+      background: var(--color-primary); /* background menu mobile */ 
   }
 }
 
@@ -325,7 +324,7 @@ a,p,span,strong,del, label{
 /*============= menu_desktop ==============*/
 
 
-@media (min-width: 1199px) {
+@media (min-width: 992px) {
     .fixed {
         box-shadow: 0 0 3px 2px #ccc;
     }
@@ -446,10 +445,7 @@ a,p,span,strong,del, label{
         position: relative;
         float: left;
         padding: 0px 21px;
-        border-top: 0px;
-        &:first-child{
-            padding-left: 0px;
-        }
+        border-top: 0px; 
     }
     .nav-menu > .menu-item:last-child{
         padding-right: 0px;
@@ -483,11 +479,10 @@ a,p,span,strong,del, label{
     position: fixed;
     top: 0;
     width: 100%;
-    background:transparent;
+    background:var(--color-white);
     z-index: 9;
     padding: 1px 5px;
-    height: 62px;
-    /*box-shadow: 0 0 3px 2px #ccc;*/
+    height: 65px;
 }
 .logo_mb{
     display: -webkit-flex;
@@ -737,10 +732,10 @@ button.scroll-top{
       cursor: pointer;
   }
   .arrow-slider {
-    width: 25px;
-    height: 25px;
-    font-size: 21px;
-    line-height: 24px;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 

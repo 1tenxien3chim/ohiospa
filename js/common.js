@@ -179,58 +179,29 @@ if (window.innerWidth > 320) {
     });
 }
 $(function () {
-    $(".slider_custom").owlCarousel({
+    $(".slider-reason").owlCarousel({
         items: 2,
-        responsive: {
-            1200: { item: 2, },// breakpoint from 1200 up
-            992: { items: 2, },
-            768: { items: 1, },
-            480: { items: 1, },
-            0: { items: 1, }
+        responsive: { 
+            991: { items: 2, },
+            768: { items: 2, },
+            480: { items: 2, },
+            0: { items: 2, }
         },
         rewind: false,
         autoplay: false,
         autoplayHoverPause: true,
         autoplayTimeout: 5000,
         smartSpeed: 1000, //slide speed smooth
-        dots: true,
-        dotsEach: false,
-        loop: false,
-        nav: true,
-        navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
-        margin: 30,
-        //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
-        //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
-        center: false,
-    });
-
-    $(".slider-businesses").owlCarousel({
-        items: 5,
-        responsive: {
-            1200: { item: 5, },// breakpoint from 1200 up
-            992: { items: 4, },
-            768: { items: 3, },
-            480: { items: 2, },
-            0: { items: 1, }
-        },
-        rewind: false,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 5000,
-        smartSpeed: 2000, //slide speed smooth
         dots: false,
         dotsEach: false,
-        loop: false,
+        loop: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
-        margin: 0,
+        margin: 20,
         //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
         //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
         center: false,
-    });
-
-
-
+    });  
 });
 
 
