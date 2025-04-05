@@ -11098,6 +11098,24 @@ button.scroll-top {
   }
 }
 @media (min-width: 992px) {
+  .row-5 {
+    margin: 0px -5px;
+  }
+  .pdd-5 {
+    padding: 0px 5px;
+  }
+  .row-7 {
+    margin: 7px;
+  }
+  .pdd-7 {
+    padding: 7px;
+  }
+  .col-60 {
+    width: 64%;
+  }
+  .col-40 {
+    width: 36%;
+  }
   ul.menu {
     display: flex;
     justify-content: space-between;
@@ -11340,5 +11358,140 @@ button.scroll-top {
 @media (max-width: 767px) {
   #reason .slider-reason .owl-nav .owl-prev {
     left: -30px;
+  }
+}
+
+#therapy {
+  background: url(../img/bg-therapy.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 176px;
+  padding-bottom: 30px;
+}
+@media (max-width: 991px) {
+  #therapy {
+    background: url(../img/bg-therapy-mb.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 40px;
+  }
+}
+#therapy .img-therapy img {
+  max-width: 100%;
+}
+#therapy .content-therapy {
+  margin-top: 70px;
+  padding: 20px;
+  background: url(../img/bg-chua-tri.png) no-repeat;
+  background-size: 100% 100%;
+}
+#therapy .content-therapy li {
+  background: url(../img/bg-item-therapy.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 10px 30px 30px;
+  margin-bottom: 10px;
+}
+#therapy .content-therapy li p {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin-bottom: 0px;
+  line-height: 16px;
+  text-align: justify;
+}
+@media (max-width: 991px) {
+  #therapy .img-therapy {
+    text-align: center;
+  }
+  #therapy .img-therapy img {
+    margin-bottom: 30px;
+  }
+  #therapy .content-therapy {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+.title-mb {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#procedure {
+  padding: 35px 0px 30px 0px;
+  background: url(../img/bg-procedure.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+#procedure .title-procedure {
+  text-align: center;
+  margin-bottom: 10px;
+  clear: both;
+}
+#procedure .title-procedure img {
+  max-width: 100%;
+}
+#procedure .box-procedure {
+  background-color: #f4f4f4;
+  padding: 20px 25px 100px 20px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 10px 6px -6px #ccc;
+  overflow: hidden;
+}
+#procedure .box-procedure .line-bottom-box {
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+#procedure .box-procedure .item-procedure {
+  position: relative;
+}
+#procedure .box-procedure .item-procedure img {
+  max-width: 100%;
+}
+#procedure .box-procedure .item-procedure p {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  width: calc(100% - 30px);
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+#procedure .box-procedure .step {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+#procedure .box-procedure .step img {
+  max-width: 60px;
+  height: auto;
+}
+@media (max-width: 991px) {
+  #procedure .box-procedure .item-procedure {
+    margin-bottom: 60px;
+  }
+  #procedure .box-procedure .line-bottom {
+    position: relative;
+  }
+  #procedure .box-procedure .line-bottom::after {
+    position: absolute;
+    content: "";
+    width: 83%;
+    height: 10px;
+    background-color: var(--color-primary);
+    bottom: 26px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%);
+  }
+  #procedure .box-procedure .step {
+    bottom: 25px;
+  }
+  #procedure .box-procedure .step img {
+    max-width: 35px;
   }
 }/*# sourceMappingURL=main.css.map */
