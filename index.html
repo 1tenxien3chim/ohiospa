@@ -13,26 +13,28 @@
 
 <body>
     <!-- header content-->
-
-    <header class="header">
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-5 hidden-xs">
-                        <div class="logo">
-                            <a href=""><img src="img/logo.png" alt=""></a>
-                        </div>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <div class="logo">
+                        <a href=""><img src="img/logo.png" alt=""></a>
                     </div>
-                    <div class="col-md-8 col-sm-7 hidden-xs">
-                        <div class="click-top">
-                            <a href="" class="btn-call"><img src="img/icon-phone.png" alt="">0919.005.523</a>
-                            <a href="" class="btn-regiter">đăng ký tư vấn</a>
-                        </div>
+                </div>
+                <div class="col-md-8 hidden-sm hidden-xs">
+                    <div class="click-top">
+                        <a href="" class="btn btn-call">
+                            <span><img src="img/icon-phone.png" alt=""></span> 
+                            0919.005.523
+                        </a>
+                        <a href="" class="btn btn-regiter">đăng ký tư vấn</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="menu_mb visible-xs visible-sm visible-md ">
+    </div>
+    <header class="header"> 
+        <div class="menu_mb visible-xs visible-sm">
             <button class="nav-toggle">
                 <span></span>
             </button>
@@ -46,32 +48,31 @@
                     <div class="menu_main">
                         <nav class="nav is-fixed">
                             <div class="nav-container">
-                                <ul class="nav-menu menu clearfix list-top">
-                                    <li class="menu-item visible-md visible-sm visible-xs ">
-                                        <div class="logo-mobile">
-                                            <a href=""><img src="img/logo.png" alt=""></a>
-                                        </div>
+                                <ul class="nav-menu menu">
+                                    <div class="visible-sm visible-xs">
+                                        <img src="img/logo.png" alt="">
+                                    </div> 
+                                    <li class="menu-item"> 
+                                        <a href="" class="menu-link">Nguyên nhân</a>
+                                    </li>
+                                    <li class="menu-item"> 
+                                        <a href="" class="menu-link">Công nghệ</a>
+                                    </li>
+                                    <li class="menu-item"> 
+                                        <a href="" class="menu-link">Quy trình</a>
                                     </li>
                                     <li class="menu-item">
-                                        Nguyên nhân
-                                    </li>
-                                    <li class="menu-item">
-                                        Công nghệ
-                                    </li>
-                                    <li class="menu-item">
-                                        Quy trình
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="">bác sĩ</a>
+                                        <a href="" class="menu-link">bác sĩ</a>
                                     </li> 
                                     <li class="menu-item">
-                                        <a href="" >kết quả</a>
+                                        <a href="" class="menu-link">kết quả</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="">nhận ưu đãi</a>
-                                    </li>
-
-                                    
+                                        <a href="" class="menu-link">nhận ưu đãi</a>
+                                    </li> 
+                                    <div class="visible-sm visible-xs">
+                                        <a href="" class="btn btn-regiter">đăng ký tư vấn</a>
+                                    </div>   
                                 </ul>
                             </div>
                         </nav>
@@ -80,7 +81,10 @@
             </div>
         </div>
     </header>
-    
+    <!-- end header -->
+     <section id="banner">
+        <img class="w_100" src="img/banner.jpg" alt="">
+     </section>
 
     <button class="scroll-top scroll-to-target" data-target="html">
         <span class="icon-back-top"></span>

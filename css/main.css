@@ -8680,11 +8680,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 500;
   color: #252525;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-primary);
 }
 
 a, p, span, strong, del, label {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .w_100 {
@@ -8739,8 +8739,8 @@ a, p, span, strong, del, label {
 }
 
 @font-face {
-  font-family: var(--font-primary);
-  src: url("../fonts/fontawesome-webfont.eot"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-family: "SVN-Gilroy";
+  src: url("../fonts/SVN-GilroyBold.eot"), url("../fonts/SVN-GilroyBold.woff2") format("woff2"), url("../fonts/SVN-GilroyBold.woff") format("woff"), url("../fonts/SVN-GilroyBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -8765,8 +8765,8 @@ a, p, span, strong, del, label {
   z-index: 9999;
   overflow-y: auto;
   visibility: hidden;
-  width: 400px;
-  max-width: 70%;
+  width: 300px;
+  max-width: 100%;
   height: 100%;
   min-height: 100%;
   margin: 0;
@@ -8774,6 +8774,12 @@ a, p, span, strong, del, label {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transform: translateX(-100%);
   -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 991px) {
+  .nav-container {
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+  }
 }
 
 .nav-container.is-visible {
@@ -8787,30 +8793,26 @@ a, p, span, strong, del, label {
   display: inline-block;
   padding: 2px;
   border: 0;
-  background-color: transparent;
-  right: 15px;
-  width: 45px;
-  height: 62px;
+  background-color: var(--color-primary);
+  left: 20px;
+  width: 35px;
+  height: 35px;
   position: fixed;
   z-index: 99;
   outline: none;
-  top: 0px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .nav-toggle {
-    right: 120px;
-  }
+  top: 20px;
+  border-radius: 5px;
 }
 
 .nav-toggle span {
   position: relative;
   margin: auto;
   display: block;
-  width: 30px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: #494949; /*color btn menu mobile*/
+  background-color: var(--color-white); /*color btn menu mobile*/
 }
 
 .nav-toggle.is-active span {
@@ -8821,12 +8823,12 @@ a, p, span, strong, del, label {
   content: "";
   top: -7px;
   width: 100%;
-  height: 3px;
+  height: 2px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #494949;
+  background-color: var(--color-white);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -8855,11 +8857,6 @@ a, p, span, strong, del, label {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
-
-.nav-menu > .menu-item:hover {
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-menu > .menu-item:hover > .menu-link {
@@ -8922,7 +8919,7 @@ a, p, span, strong, del, label {
 @media (max-width: 1199px) {
   .nav-container {
     overflow-x: hidden;
-    background: #fff; /* background menu mobile */
+    background: var(--color-primary); /* background menu mobile */
     padding-bottom: 100px;
   }
 }
@@ -8958,9 +8955,6 @@ a, p, span, strong, del, label {
   }
   .nav-menu .menu-item {
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-  }
-  .nav-menu .menu-link {
-    /*padding: 8px 15px;*/
   }
   .has-dropdown:after {
     content: "\f0d7"; /*icon dropdown menu pc */
@@ -9030,14 +9024,10 @@ a, p, span, strong, del, label {
     display: block;
     font-style: normal;
     font-size: 16px;
-    line-height: 26px;
-    color: #111111;
-    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 16px 0px;
     transition: all 0.25s linear;
-  }
-  .nav-menu > .menu-item:hover > .menu-link {
-    border-bottom: 2px solid #FC887B;
-    transition: all 0.15s linear;
   }
   /* /padding menu pc*/
   .nav-menu > .menu-item {
@@ -9045,6 +9035,9 @@ a, p, span, strong, del, label {
     float: left;
     padding: 0px 21px;
     border-top: 0px;
+  }
+  .nav-menu > .menu-item:first-child {
+    padding-left: 0px;
   }
   .nav-menu > .menu-item:last-child {
     padding-right: 0px;
@@ -9055,7 +9048,7 @@ a, p, span, strong, del, label {
   }
   .nav-menu > .menu-item.is-active > .menu-link,
   .nav-menu > .menu-item:hover > .menu-link {
-    color: #FC887B; /*color khi hover và active menu pc*/
+    color: var(--color-white); /*color khi hover và active menu pc*/
   }
   .nav-dropdown > .menu-item {
     padding: 0;
@@ -9324,9 +9317,9 @@ button.scroll-top {
 @media (max-width: 991px) {
   .overlay {
     position: fixed;
-    z-index: 9;
+    z-index: 10;
     display: none;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(1, 1, 1, 0.6);
     top: 0;
     right: 0;
     bottom: 0;
@@ -11109,6 +11102,75 @@ button.scroll-top {
     max-width: 1140px;
   }
 }
-.header .top-header {
+@media (min-width: 992px) {
+  ul.menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.top-header {
   padding: 10px 0px;
+}
+@media (max-width: 991px) {
+  .top-header {
+    display: none;
+  }
+}
+.top-header .click-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 64px;
+}
+.top-header .click-top .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 16px;
+  max-height: 48px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+}
+.top-header .click-top .btn.btn-call {
+  background-color: var(--btn-1);
+  padding-left: 2px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.top-header .click-top .btn.btn-regiter {
+  background-color: var(--btn-2);
+}
+.top-header .click-top .btn span {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.top-header .click-top .btn span img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.header {
+  background-color: var(--color-primary);
+}
+
+.logo-mobile {
+  text-align: center;
+  padding: 4px 0px;
+}
+.logo-mobile img {
+  max-height: 51px;
+}
+
+@media (max-width: 991px) {
+  #banner {
+    margin-top: 65px;
+  }
 }/*# sourceMappingURL=main.css.map */
