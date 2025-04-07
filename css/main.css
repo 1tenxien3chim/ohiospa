@@ -11576,6 +11576,33 @@ button.scroll-top {
 #doctor .title-doctor img {
   max-width: 100%;
 }
+#doctor .slider-docter .owl-nav .owl-prev {
+  left: -60px;
+}
+@media (max-width: 991px) {
+  #doctor .slider-docter .owl-nav .owl-prev {
+    left: 10px;
+  }
+}
+#doctor .slider-docter .owl-nav .owl-next {
+  right: -60px;
+}
+@media (max-width: 991px) {
+  #doctor .slider-docter .owl-nav .owl-next {
+    right: 10px;
+  }
+}
+#doctor .slider-docter .owl-dots {
+  bottom: -20px;
+}
+#doctor .slider-docter .owl-dots .owl-dot span {
+  width: 50px;
+  height: 7px;
+  color: #dfdfdf;
+}
+#doctor .slider-docter .owl-dots .owl-dot.active span {
+  background-color: var(--color-primary);
+}
 #doctor .profile {
   position: relative;
 }
@@ -11585,7 +11612,7 @@ button.scroll-top {
 #doctor .profile .desc {
   position: absolute;
   width: calc(100% - 25px);
-  top: 63%;
+  top: 64%;
   left: 15px;
   color: var(--color-white);
 }
@@ -11604,7 +11631,7 @@ button.scroll-top {
   color: var(--color-white);
   text-transform: uppercase;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #doctor .profile .desc .professional li {
   padding-left: 22px;
@@ -11621,4 +11648,96 @@ button.scroll-top {
   background-color: var(--color-white);
   left: 10px;
   top: 6px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #doctor .profile .desc {
+    width: calc(100% - 30px);
+    top: 64%;
+    left: 20px;
+  }
+  #doctor .profile .desc .name-dtor {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #doctor .profile .desc .professional li {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  #doctor .profile .desc .professional li::after {
+    top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  #doctor .profile .desc {
+    width: calc(100% - 15px);
+    top: 61%;
+    left: 10px;
+  }
+  #doctor .profile .desc .hvi {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+  #doctor .profile .desc .hvi span:last-child {
+    margin-top: -2px;
+    font-size: 12px;
+  }
+  #doctor .profile .desc .name-dtor {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  #doctor .profile .desc .professional li {
+    padding-left: 10px;
+    line-height: 16px;
+    font-size: 12px;
+  }
+  #doctor .profile .desc .professional li::after {
+    left: 3px;
+  }
+}
+
+footer {
+  padding: 70px 0px 100px 0px;
+  background-color: var(--color-primary);
+}
+footer .social-f {
+  margin-top: 30px;
+  display: flex;
+}
+footer .social-f li {
+  margin-right: 10px;
+}
+footer .social-f li a img {
+  max-width: 45px;
+  height: auto;
+}
+footer .title-f, footer .sub-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+footer .title-f {
+  margin-bottom: 10px;
+}
+footer .sub-title {
+  font-size: 25px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-white);
+}
+footer .box-f {
+  margin-bottom: 40px;
+}
+footer .box-f .title-box-f {
+  color: var(--color-white);
+}
+footer .box-f .title-box-f img {
+  margin-right: 15px;
+  margin-top: -5px;
+}
+footer .box-f .desc-box-f {
+  margin-top: 20px;
+}
+footer .box-f .desc-box-f p {
+  color: var(--color-white);
 }/*# sourceMappingURL=main.css.map */

@@ -234,10 +234,10 @@ $(function () {
     $(".slider-docter").owlCarousel({
         items: 4,
         responsive: { 
-            991: { items: 4, },
-            768: { items: 2, },
-            480: { items: 2, },
-            0: { items: 2, }
+            991: { items: 4, margin:25},
+            768: { items: 2, margin:10,},
+            480: { items: 2, margin:10,},
+            0: { items: 2, margin:10,}
         },
         rewind: false,
         autoplay: false,
@@ -249,7 +249,7 @@ $(function () {
         loop: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
-        margin: 25,
+        
         //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
         //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
         center: false,
