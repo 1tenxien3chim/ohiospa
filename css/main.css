@@ -11564,4 +11564,61 @@ button.scroll-top {
   #license .box-license {
     padding: 10px;
   }
+}
+
+#doctor {
+  padding: 40px 0px 50px;
+}
+#doctor .title-doctor {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#doctor .title-doctor img {
+  max-width: 100%;
+}
+#doctor .profile {
+  position: relative;
+}
+#doctor .profile img {
+  max-width: 100%;
+}
+#doctor .profile .desc {
+  position: absolute;
+  width: calc(100% - 25px);
+  top: 63%;
+  left: 15px;
+  color: var(--color-white);
+}
+#doctor .profile .desc .hvi {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 25px;
+}
+#doctor .profile .desc .hvi span:last-child {
+  margin-top: -5px;
+  color: var(--color-primary);
+  font-size: 15px;
+}
+#doctor .profile .desc .name-dtor {
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#doctor .profile .desc .professional li {
+  padding-left: 22px;
+  line-height: 18px;
+  position: relative;
+  font-size: 13px;
+}
+#doctor .profile .desc .professional li::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  left: 10px;
+  top: 6px;
 }/*# sourceMappingURL=main.css.map */

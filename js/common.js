@@ -230,3 +230,29 @@ $(function () {
     });  
 });
 
+$(function () {
+    $(".slider-docter").owlCarousel({
+        items: 4,
+        responsive: { 
+            991: { items: 4, },
+            768: { items: 2, },
+            480: { items: 2, },
+            0: { items: 2, }
+        },
+        rewind: false,
+        autoplay: false,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000, //slide speed smooth
+        dots: true,
+        dotsEach: false,
+        loop: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
+        margin: 25,
+        //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
+        //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
+        center: false,
+    });  
+});
+
