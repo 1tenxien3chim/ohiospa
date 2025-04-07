@@ -194,7 +194,7 @@ $(function () {
         smartSpeed: 1000, //slide speed smooth
         dots: false,
         dotsEach: false,
-        loop: true,
+        loop: false,
         nav: true,
         navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
         margin: 20,
@@ -204,4 +204,29 @@ $(function () {
     });  
 });
 
+$(function () {
+    $(".slider-license").owlCarousel({
+        items: 2,
+        responsive: { 
+            991: { items: 2, },
+            768: { items: 2, },
+            480: { items: 2, },
+            0: { items: 2, }
+        },
+        rewind: false,
+        autoplay: false,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000, //slide speed smooth
+        dots: false,
+        dotsEach: false,
+        loop: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
+        margin: 10,
+        //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
+        //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
+        center: false,
+    });  
+});
 
