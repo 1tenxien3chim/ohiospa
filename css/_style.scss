@@ -511,6 +511,14 @@
                     }
                 }
             }
+            @media (max-width:767px) {
+                bottom: -35px; 
+                .owl-dot{
+                    span{
+                        height:5px;
+                    }
+                }
+            }
         }
     }
     .profile{
@@ -563,13 +571,7 @@
             @media (min-width:768px) and (max-width:991px){
                 width: calc(100% - 30px);
                 top: 64%;
-                left: 20px;
-                .hvi{
-                   
-                    span:last-child{
-                         
-                    }
-                }
+                left: 20px; 
                 .name-dtor{
                     margin-top: 15px;
                     margin-bottom: 15px;
@@ -616,6 +618,145 @@
         }
     } 
 }
+.slider-docter, .slider-facilities{
+    .owl-nav{
+        .owl-prev{
+            left: -60px;
+            @media (max-width:991px) {
+                left: 10px;
+            }
+        }
+        .owl-next{
+            right: -60px;
+            @media (max-width:991px) {
+                right: 10px;
+            }
+        }
+    }
+    .owl-dots{
+        bottom: -20px; 
+        .owl-dot{
+            span{
+                width: 50px;
+                height: 7px;
+                color: #dfdfdf;
+            } 
+            &.active{
+                span{
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+        @media (max-width:767px) {
+            bottom: -35px; 
+            .owl-dot{
+                span{
+                    height:5px;
+                }
+            }
+        }
+    }
+}
+#facilities{ 
+    background: url(../img/chua/bg-facilities.jpg);
+    background-size: 100% 100%; 
+    padding: 40px 0px 40px;
+    .title-facilities{ 
+        text-align: center; 
+        img{
+            max-width: 100%;
+            width: 450px;
+            margin-bottom: 30px;
+            @media (max-width:767px){
+                width: 270px;
+            }
+        }
+    }
+    .img-content{
+        img{
+            max-width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        } 
+        @media (max-width:991px) {
+            img{
+                margin-top:40px;
+            }
+        }
+    }
+    .slider-facilities{
+        .item{ 
+            .img-main{
+                border-radius: 15px;
+                overflow: hidden;
+                width: 100%;
+                margin-bottom: 20px;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .list-sub{
+                display: flex;
+                .img-sub{
+                    width:50%;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    img{
+                        max-width: 100%;
+                    }
+                    &:first-child{
+                        padding-right:10px;
+                    }
+                    &:last-child{
+                        padding-left: 10px;
+                    }
+                }
+            } 
+        }
+    }
+    @media (max-width:991px) {
+        background:var(--color-white); 
+    }
+}
+#result{
+    background: url(../img/chua/bg-kqua.jpg);
+    background-size: 100% 100%;
+    padding: 40px 0px;
+    .title-result{
+        text-align: center;
+        margin-bottom: 25px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .img-videos{
+        overflow: hidden;
+        background: url(../img/chua/khung-kqua.png) no-repeat;
+        background-size: 100% 100%;
+        padding: 35px 35px 55px 35px;
+        .before-affter, .videos-kq{
+            img{
+                width: 100%;
+            }
+        }
+        .before-affter{
+            .name-customer{
+                background: url(../img/chua/bg-name-customer.png) no-repeat;
+                background-size: 100% 100%;
+                max-width: 435px;
+                text-align: left;
+                margin: auto;
+                min-height: 85px;
+                margin-top: 50px;
+                font-size: 22px;
+                color: var(--color-white);
+                padding: 10px 10px 10px 20px;
+                line-height:30px;
+            }
+        }
+        
+    }
+}
 footer{
     padding: 70px 0px 100px 0px;
     background-color: var(--color-primary);
@@ -659,28 +800,9 @@ footer{
             margin-top: 20px;
             p{
                 color: var(--color-white); 
+                font-family: var(--font-sub);
             }
         }
     }
 }
-#facilities{ 
-    background: url(../img/chua/bg-facilities.jpg);
-    background-size: 100% 100%; 
-    padding: 40px 0px 40px;
-    .title-facilities{ 
-        text-align: center; 
-        img{
-            max-width: 100%;
-            width: 450px;
-            margin-bottom: 30px;
-        }
-    }
-    .img-content{
-        img{
-            max-width: 100%;
-            text-align: center;
-            margin-top: 100px;
-        } 
-    }
-    
-}
+

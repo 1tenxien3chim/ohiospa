@@ -8624,6 +8624,7 @@ button.close {
 html {
   font-size: 0.625em;
   /* for IE adjust. it's equal 62.5%*/
+  font-family: var(--font-sub);
 }
 
 p {
@@ -8669,6 +8670,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 16px;
+  font-family: var(--font-sub);
 }
 
 del {
@@ -8736,6 +8738,7 @@ a, p, span, strong, del, label {
   --btn-2:#ed1f04;
   --color-red:#ed1f04;
   --font-primary:"SVN-Gilroy";
+  --font-sub:"SVN-Gilroy-medium";
 }
 
 @font-face {
@@ -8743,6 +8746,13 @@ a, p, span, strong, del, label {
   src: url("../fonts/SVN-GilroyBold.eot"), url("../fonts/SVN-GilroyBold.woff2") format("woff2"), url("../fonts/SVN-GilroyBold.woff") format("woff"), url("../fonts/SVN-GilroyBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroy-medium";
+  src: url("../fonts/SVN-Gilroy.eot"), url("../fonts/SVN-Gilroy.woff2") format("woff2"), url("../fonts/SVN-Gilroy.woff") format("woff"), url("../fonts/SVN-Gilroy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 /*======================================== end config =================================*/
 /*=========================================== begin menu =======================================*/
@@ -11618,6 +11628,14 @@ button.scroll-top {
 #doctor .slider-docter .owl-dots .owl-dot.active span {
   background-color: var(--color-primary);
 }
+@media (max-width: 767px) {
+  #doctor .slider-docter .owl-dots {
+    bottom: -35px;
+  }
+  #doctor .slider-docter .owl-dots .owl-dot span {
+    height: 5px;
+  }
+}
 #doctor .profile {
   position: relative;
 }
@@ -11712,6 +11730,137 @@ button.scroll-top {
   }
 }
 
+.slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev {
+  left: -60px;
+}
+@media (max-width: 991px) {
+  .slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev {
+    left: 10px;
+  }
+}
+.slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next {
+  right: -60px;
+}
+@media (max-width: 991px) {
+  .slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next {
+    right: 10px;
+  }
+}
+.slider-docter .owl-dots, .slider-facilities .owl-dots {
+  bottom: -20px;
+}
+.slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span {
+  width: 50px;
+  height: 7px;
+  color: #dfdfdf;
+}
+.slider-docter .owl-dots .owl-dot.active span, .slider-facilities .owl-dots .owl-dot.active span {
+  background-color: var(--color-primary);
+}
+@media (max-width: 767px) {
+  .slider-docter .owl-dots, .slider-facilities .owl-dots {
+    bottom: -35px;
+  }
+  .slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span {
+    height: 5px;
+  }
+}
+
+#facilities {
+  background: url(../img/chua/bg-facilities.jpg);
+  background-size: 100% 100%;
+  padding: 40px 0px 40px;
+}
+#facilities .title-facilities {
+  text-align: center;
+}
+#facilities .title-facilities img {
+  max-width: 100%;
+  width: 450px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  #facilities .title-facilities img {
+    width: 270px;
+  }
+}
+#facilities .img-content img {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+@media (max-width: 991px) {
+  #facilities .img-content img {
+    margin-top: 40px;
+  }
+}
+#facilities .slider-facilities .item .img-main {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#facilities .slider-facilities .item .img-main img {
+  max-width: 100%;
+}
+#facilities .slider-facilities .item .list-sub {
+  display: flex;
+}
+#facilities .slider-facilities .item .list-sub .img-sub {
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#facilities .slider-facilities .item .list-sub .img-sub img {
+  max-width: 100%;
+}
+#facilities .slider-facilities .item .list-sub .img-sub:first-child {
+  padding-right: 10px;
+}
+#facilities .slider-facilities .item .list-sub .img-sub:last-child {
+  padding-left: 10px;
+}
+@media (max-width: 991px) {
+  #facilities {
+    background: var(--color-white);
+  }
+}
+
+#result {
+  background: url(../img/chua/bg-kqua.jpg);
+  background-size: 100% 100%;
+  padding: 40px 0px;
+}
+#result .title-result {
+  text-align: center;
+  margin-bottom: 25px;
+}
+#result .title-result img {
+  max-width: 100%;
+}
+#result .img-videos {
+  overflow: hidden;
+  background: url(../img/chua/khung-kqua.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 35px 35px 55px 35px;
+}
+#result .img-videos .before-affter img, #result .img-videos .videos-kq img {
+  width: 100%;
+}
+#result .img-videos .before-affter .name-customer {
+  background: url(../img/chua/bg-name-customer.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 435px;
+  text-align: left;
+  margin: auto;
+  min-height: 85px;
+  margin-top: 50px;
+  font-size: 22px;
+  color: var(--color-white);
+  padding: 10px 10px 10px 20px;
+  line-height: 30px;
+}
+
 footer {
   padding: 70px 0px 100px 0px;
   background-color: var(--color-primary);
@@ -11756,23 +11905,5 @@ footer .box-f .desc-box-f {
 }
 footer .box-f .desc-box-f p {
   color: var(--color-white);
-}
-
-#facilities {
-  background: url(../img/chua/bg-facilities.jpg);
-  background-size: 100% 100%;
-  padding: 40px 0px 40px;
-}
-#facilities .title-facilities {
-  text-align: center;
-}
-#facilities .title-facilities img {
-  max-width: 100%;
-  width: 450px;
-  margin-bottom: 30px;
-}
-#facilities .img-content img {
-  max-width: 100%;
-  text-align: center;
-  margin-top: 100px;
+  font-family: var(--font-sub);
 }/*# sourceMappingURL=main.css.map */

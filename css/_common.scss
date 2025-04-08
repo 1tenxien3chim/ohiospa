@@ -10,6 +10,7 @@
 html {
     font-size: calc(10em / 16);
     /* for IE adjust. it's equal 62.5%*/
+    font-family: var(--font-sub);
 }
 p {
     margin: 0px;
@@ -54,6 +55,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 16px;
+    font-family: var(--font-sub);
 }
 del {
     font-size: 12px;
@@ -118,6 +120,7 @@ a,p,span,strong,del, label{
     --btn-2:#ed1f04;
     --color-red:#ed1f04; 
     --font-primary:'SVN-Gilroy';
+    --font-sub:'SVN-Gilroy-medium';
 }
 @font-face {
     font-family: 'SVN-Gilroy';
@@ -127,6 +130,17 @@ a,p,span,strong,del, label{
          url('../fonts/SVN-GilroyBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy-medium';
+    src: url('../fonts/SVN-Gilroy.eot'),
+         url('../fonts/SVN-Gilroy.woff2') format('woff2'), 
+         url('../fonts/SVN-Gilroy.woff') format('woff'), 
+         url('../fonts/SVN-Gilroy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 // end root 
