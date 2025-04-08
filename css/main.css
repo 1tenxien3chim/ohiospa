@@ -11372,8 +11372,8 @@ button.scroll-top {
 #therapy {
   background: url(../img/bg-therapy.jpg) no-repeat;
   background-size: 100% 100%;
-  padding-top: 176px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 @media (max-width: 991px) {
   #therapy {
@@ -11392,10 +11392,20 @@ button.scroll-top {
   background-size: 100% 100%;
 }
 #therapy .content-therapy li {
-  background: url(../img/bg-item-therapy.png) no-repeat;
+  background: url(../img/chua/bg-item-therapy.png) no-repeat;
   background-size: 100% 100%;
-  padding: 20px 10px 30px 30px;
-  margin-bottom: 10px;
+  padding: 10px 10px 30px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#therapy .content-therapy li::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -4px;
+  width: 25px;
+  height: 34px;
+  background: url(../img/chua/icon.png);
 }
 #therapy .content-therapy li p {
   font-size: 13px;
@@ -11420,6 +11430,11 @@ button.scroll-top {
 .title-mb {
   text-align: center;
   margin-bottom: 30px;
+}
+.title-mb img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
 }
 
 #procedure {
@@ -11553,8 +11568,8 @@ button.scroll-top {
 @media (max-width: 767px) {
   #license .box-license .bk-dsc p, #license .box-license .box-bk-mb p {
     bottom: inherit;
-    font-size: 13px;
-    top: 75%;
+    font-size: 12px;
+    top: 72%;
   }
 }
 #license .box-license .box-bk-mb {
@@ -11683,13 +11698,14 @@ button.scroll-top {
   }
   #doctor .profile .desc .name-dtor {
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 12px;
   }
   #doctor .profile .desc .professional li {
     padding-left: 10px;
     line-height: 16px;
-    font-size: 12px;
+    font-size: 9px;
+    text-transform: uppercase;
   }
   #doctor .profile .desc .professional li::after {
     left: 3px;
@@ -11740,4 +11756,23 @@ footer .box-f .desc-box-f {
 }
 footer .box-f .desc-box-f p {
   color: var(--color-white);
+}
+
+#facilities {
+  background: url(../img/chua/bg-facilities.jpg);
+  background-size: 100% 100%;
+  padding: 40px 0px 40px;
+}
+#facilities .title-facilities {
+  text-align: center;
+}
+#facilities .title-facilities img {
+  max-width: 100%;
+  width: 450px;
+  margin-bottom: 30px;
+}
+#facilities .img-content img {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }/*# sourceMappingURL=main.css.map */

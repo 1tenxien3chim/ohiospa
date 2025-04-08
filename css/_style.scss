@@ -272,8 +272,8 @@
 #therapy{
     background: url(../img/bg-therapy.jpg) no-repeat;
     background-size: 100% 100%; 
-    padding-top: 176px;
-    padding-bottom: 30px; 
+    padding-top: 30px;
+    padding-bottom: 40px;
     @media (max-width:991px) {
         background: url(../img/bg-therapy-mb.jpg) no-repeat;
         background-size: 100% 100%;
@@ -290,10 +290,20 @@
         background: url(../img/bg-chua-tri.png)no-repeat;
         background-size: 100% 100%; 
         li{
-            background: url(../img/bg-item-therapy.png) no-repeat;
+            background: url(../img/chua/bg-item-therapy.png) no-repeat;
             background-size: 100% 100%;
-            padding: 20px 10px 30px 30px;
-            margin-bottom: 10px;
+            padding: 10px 10px 30px 20px;
+            margin-bottom: 20px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                top: -10px;
+                left: -4px;
+                width: 25px;
+                height: 34px;
+                background: url(../img/chua/icon.png);
+            }
             p{
                 font-size: 13px;
                 color: var(--color-primary);
@@ -317,6 +327,11 @@
     }
 }
 .title-mb{
+    img{
+        width: 700px; 
+        max-width: 100%;
+        height: auto;
+    }
     text-align: center;
     margin-bottom: 30px;
 }
@@ -444,8 +459,8 @@
                 text-align: center;
                 @media (max-width:767px) {
                     bottom: inherit;
-                    font-size: 13px;
-                    top: 75%;
+                    font-size: 12px;
+                    top: 72%;
                 }
             }  
         }
@@ -583,14 +598,15 @@
                 }
                 .name-dtor{
                     margin-top: 0px;
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                     font-size: 12px;
                 }
                 .professional{
                     li{
                         padding-left:10px;
                         line-height: 16px;
-                        font-size: 12px;
+                        font-size: 9px;
+                        text-transform: uppercase;
                         &::after{
                             left:3px;
                         }
@@ -646,4 +662,25 @@ footer{
             }
         }
     }
+}
+#facilities{ 
+    background: url(../img/chua/bg-facilities.jpg);
+    background-size: 100% 100%; 
+    padding: 40px 0px 40px;
+    .title-facilities{ 
+        text-align: center; 
+        img{
+            max-width: 100%;
+            width: 450px;
+            margin-bottom: 30px;
+        }
+    }
+    .img-content{
+        img{
+            max-width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        } 
+    }
+    
 }
