@@ -618,7 +618,7 @@
         }
     } 
 }
-.slider-docter, .slider-facilities, .img-videos{
+.slider-docter, .slider-facilities, .img-videos, .slider-news{
     .owl-nav{
         .owl-prev{
             left: -60px;
@@ -871,8 +871,251 @@
     }
 }
 #news{
+    padding: 50px 0px 40px;
+    background: url(../img/chua/bg-news.jpg);
+    background-size: 100% 100%;
+    .title-news, .sub-news{ 
+        color: var(--color-primary); 
+        text-align: center;
+    }
+    .title-news{
+        font-size: 40px; 
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .sub-news{
+        font-size:35px;  
+        margin-bottom:40px;
+    }
+    .list-newspaper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        li{
+            min-width: 16.666666%;
+            max-width: 16.666666%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center; 
+            margin-bottom: 25px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .slider-news{
+        .item{
+            position: relative;
+            img{
+                max-width: 100%; 
+            }
+            .desc-newspaper{
+                position: absolute;
+                color: var(--color-white);
+                font-size: 14px;
+                top: 73%;
+                left: 15px;
+                width: calc(100% - 25px);
+                padding-right: 15px; 
+                .name-newspaper{
+                    margin-bottom: 20px;
+                    color: var(--color-white);
+                }
+                p{
+                    line-height: 18px;
+                    font-family: var(--font-sub);
+                }
+                @media (max-width:991px) {
+                    font-size: 16px;
+                    top: 75%;
+                    left: 20px;
+                }
+                @media (max-width:767px) {
+                    font-size: 14px;
+                    top: 64%;
+                    left: 15px;
+                    .name-newspaper{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .owl-dots {
+            bottom: -35px;
+        }
+        .owl-nav{
+            .owl-prev{
+                left: -45px;
+            }
+            .owl-next{
+                right: -45px;
+            }
+        }
+    }
+    .view-news{
+        .videos-kq{
+            .click-popup{
+                display: block;
+                text-align: center;
+                img{
+                    max-width: 100%;
+                }
+            } 
+        }
+    }
+    .modal-dialog{ 
+        background: var(--color-white);
+        padding: 15px;
+        margin-top: 15%;
+        border-radius: 5px;
+        .close{
+            margin-top: -23px;
+            margin-right: -20px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background: var(--color-white);
+            opacity: 1;
+            position: absolute;
+            top: 20px;
+            right: 15px; 
+        }
+    } 
+    @media (max-width:991px) {
+        .list-newspaper{
+            li{
+                min-width:33.3333%;
+                max-width: 33.3333%;
+                text-align: center;
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+        .title-news{
+            font-size:23px; 
+        }
+        .sub-news{
+            font-size:18px; 
+        }
+        .slider-news{
+            margin-bottom:50px;
+        }
 
+    }
 }
+#clear-mao{
+    padding: 80px 0px 115px;
+    background: url(../img/chua/bg-sach.jpg) no-repeat;
+    background-size: 100% 100%;
+    .title-form{ 
+        img{
+            max-width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+    form{
+        max-width: 340px;
+        min-height: 345px;
+        padding:20px 15px 15px 15px;
+        margin: auto;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+        border:8px solid var(--color-white);
+        text-align: center;
+        .text-form{
+            font-size:85px;
+            font-family: var(--font-primary);
+            color: var(--color-red);
+            justify-content: center;
+            align-items: center;
+            span{
+                font-size:45px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+        .sub-form{
+            margin-top: 15px;
+            margin-bottom:25px;
+            font-size: 16px;
+            color: var(--color-primary);
+            font-family: var(--font-primary);
+        }
+        .box{  
+            input, select{
+                border-radius:10px;
+                border:2px solid #b999d2;
+                font-size: 16px;
+            }
+            .custom-dropdown{
+                position: relative;
+                color: var(--color-primary);
+                border-radius:10px;
+                border:2px solid #b999d2;
+                font-size: 16px; 
+                text-align: left;
+                padding: 3px 12px;
+                background:url(../img/chua/icon.png) no-repeat, #fff; 
+                background-position: right 10px center; 
+                margin-bottom:15px;
+            }
+            .dropdown-selected { 
+                cursor: pointer;  
+            }
+            .dropdown-options {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                border: 1px solid #ccc;
+                display: none;
+                z-index: 10;
+            }
+            .dropdown-option {
+                padding: 10px;
+                cursor: pointer;
+            }
+              
+            .dropdown-option:hover {
+            background-color: #f7931e;
+            color: white;
+            }
+            select{
+                color:var(--color-primary);
+            }
+            input{
+                &::placeholder {
+                    color:var(--color-primary);
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                &::-ms-input-placeholder { /* Edge 12 -18 */
+                    color:var(--color-primary);
+                }
+            }
+            
+        }
+    }   
+    @media (max-width:991px) {
+        background: url(../img/chua/bg-sach-mb.png) no-repeat;
+        background-size: 100% 100%;  
+        padding: 480px 0px 115px;
+        .title-form{
+            text-align: center;
+            img{
+                max-width: 95%;
+            }
+        }
+    }
+    
+}
+
 footer{
     padding: 70px 0px 100px 0px;
     background-color: var(--color-primary);
@@ -898,15 +1141,17 @@ footer{
         margin-bottom:10px;
     }
     .sub-title{
-        font-size: 25px; 
+        font-size: 28px; 
         margin-bottom: 50px;
         padding-bottom: 30px;
         border-bottom: 1px solid var(--color-white);
+        font-family: var(--font-sub);
     }
     .box-f{
         margin-bottom: 40px;
         .title-box-f{
             color: var(--color-white);
+            font-size: 22px;
             img{
                 margin-right: 15px;
                 margin-top: -5px;
@@ -919,6 +1164,28 @@ footer{
                 font-family: var(--font-sub);
             }
         }
+    }
+    @media (max-width:991px) {
+        .logo-f{
+            text-align: center;
+        }
+        .social-f{
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        .title-f{
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+            line-height: 38px;
+        }
+        .sub-title{ 
+            text-align: center;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        
     }
 }
 

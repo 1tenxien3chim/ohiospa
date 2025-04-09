@@ -308,3 +308,30 @@ $(function () {
     });  
 });
 
+$(function () {
+    $(".slider-news").owlCarousel({
+        items: 2,
+        responsive: { 
+            991: { items: 2,},
+            768: { items: 2,margin:10, },
+            480: { items: 2, margin:10,},
+            0: { items: 2,margin:10,}
+        },
+        rewind: false,
+        autoplay: false,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 1000, //slide speed smooth
+        dots: true,
+        dotsEach: false,
+        loop: true,
+        nav: true,
+        margin:20,
+        navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
+        
+        //animateOut: ['fadeOutUp', 'zoomOut', 'fadeOutLeft'], // default: false
+        //animateIn: ['fadeInDown', 'zoomIn', 'fadeInLeft'], // default: false
+        center: false,
+    });  
+});
+
