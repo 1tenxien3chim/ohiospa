@@ -11730,38 +11730,38 @@ button.scroll-top {
   }
 }
 
-.slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev {
+.slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev, .img-videos .owl-nav .owl-prev {
   left: -60px;
 }
 @media (max-width: 991px) {
-  .slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev {
+  .slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev, .img-videos .owl-nav .owl-prev {
     left: 10px;
   }
 }
-.slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next {
+.slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next, .img-videos .owl-nav .owl-next {
   right: -60px;
 }
 @media (max-width: 991px) {
-  .slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next {
+  .slider-docter .owl-nav .owl-next, .slider-facilities .owl-nav .owl-next, .img-videos .owl-nav .owl-next {
     right: 10px;
   }
 }
-.slider-docter .owl-dots, .slider-facilities .owl-dots {
+.slider-docter .owl-dots, .slider-facilities .owl-dots, .img-videos .owl-dots {
   bottom: -20px;
 }
-.slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span {
+.slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span, .img-videos .owl-dots .owl-dot span {
   width: 50px;
   height: 7px;
   color: #dfdfdf;
 }
-.slider-docter .owl-dots .owl-dot.active span, .slider-facilities .owl-dots .owl-dot.active span {
+.slider-docter .owl-dots .owl-dot.active span, .slider-facilities .owl-dots .owl-dot.active span, .img-videos .owl-dots .owl-dot.active span {
   background-color: var(--color-primary);
 }
 @media (max-width: 767px) {
-  .slider-docter .owl-dots, .slider-facilities .owl-dots {
+  .slider-docter .owl-dots, .slider-facilities .owl-dots, .img-videos .owl-dots {
     bottom: -35px;
   }
-  .slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span {
+  .slider-docter .owl-dots .owl-dot span, .slider-facilities .owl-dots .owl-dot span, .img-videos .owl-dots .owl-dot span {
     height: 5px;
   }
 }
@@ -11829,17 +11829,54 @@ button.scroll-top {
 #result {
   background: url(../img/chua/bg-kqua.jpg);
   background-size: 100% 100%;
-  padding: 40px 0px;
+  padding: 40px 0px 60px;
 }
 #result .title-result {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 #result .title-result img {
   max-width: 100%;
 }
+#result .btn-lable {
+  padding-left: 63px;
+  position: relative;
+  width: 246px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  min-height: unset;
+  border: 2px solid;
+  border-radius: 15px;
+  color: var(--color-white);
+  text-align: center;
+}
+#result .btn-lable.lable-tv {
+  background: linear-gradient(0deg, #FF0000, #FFA500);
+  background-size: 137% auto;
+  border-color: #F69022;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  border-color: #FFA500;
+}
+#result .btn-lable.lable-tv::before {
+  content: "";
+  width: 41px;
+  height: 38px;
+  background: url(../img/chua/icon-tv.png) center center/contain no-repeat;
+  position: absolute;
+  left: 9px;
+}
+#result .btn-lable.lable-videos::before {
+  content: "";
+  width: 41px;
+  height: 38px;
+  background: url(../img/chua/icon-video.png) center center/contain no-repeat;
+  position: absolute;
+  left: 9px;
+}
 #result .img-videos {
-  overflow: hidden;
   background: url(../img/chua/khung-kqua.png) no-repeat;
   background-size: 100% 100%;
   padding: 35px 35px 55px 35px;
@@ -11859,6 +11896,82 @@ button.scroll-top {
   color: var(--color-white);
   padding: 10px 10px 10px 20px;
   line-height: 30px;
+}
+#result .img-videos .modal-dialog {
+  background: var(--color-white);
+  padding: 15px;
+  margin-top: 15%;
+  border-radius: 5px;
+}
+#result .img-videos .modal-dialog .close {
+  margin-top: -23px;
+  margin-right: -20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--color-white);
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+#result .img-videos .owl-dots {
+  bottom: -40px;
+}
+@media (max-width: 991px) {
+  #result {
+    background: url(../img/chua/bg-tv-mb.jpg);
+  }
+  #result .title-result {
+    margin-bottom: 10px;
+  }
+  #result .title-result img {
+    max-width: 95%;
+  }
+  #result .img-videos {
+    background: none;
+    padding: 10px;
+  }
+  #result .img-videos .before-affter {
+    background: url(../img/chua/khung-kq-mb.png) no-repeat;
+    padding: 10px 10px 15px 20px;
+  }
+  #result .img-videos .before-affter .name-customer {
+    max-width: 254px;
+    font-size: 14px;
+    max-width: 254px;
+    line-height: 22px;
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #result .btn-lable {
+    font-size: 16px;
+    width: 115px;
+    padding-left: 22px;
+    border-radius: 7px;
+    height: auto;
+  }
+  #result .btn-lable.lable-tv, #result .btn-lable.lable-videos {
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+  }
+  #result .btn-lable.lable-tv::before, #result .btn-lable.lable-videos::before {
+    width: 21px;
+    height: 21px;
+    left: 5px;
+    top: 2px;
+  }
+  #result .btn-lable.lable-tv {
+    margin-left: 0px;
+  }
+  #result .modal-dialog {
+    padding-top: 25%;
+  }
 }
 
 footer {

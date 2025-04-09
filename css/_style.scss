@@ -618,7 +618,7 @@
         }
     } 
 }
-.slider-docter, .slider-facilities{
+.slider-docter, .slider-facilities, .img-videos{
     .owl-nav{
         .owl-prev{
             left: -60px;
@@ -721,16 +721,55 @@
 #result{
     background: url(../img/chua/bg-kqua.jpg);
     background-size: 100% 100%;
-    padding: 40px 0px;
+    padding: 40px 0px 60px;
     .title-result{
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         img{
             max-width: 100%;
         }
     }
-    .img-videos{
-        overflow: hidden;
+    .btn-lable{ 
+        padding-left: 63px;
+        position: relative;
+        width: 246px;
+        height: 56px;
+        display: flex;
+        align-items: center; 
+        font-size: 34px;
+        min-height: unset; 
+        border: 2px solid; 
+        border-radius: 15px;
+        color: var(--color-white);
+        text-align: center; 
+        &.lable-tv{
+            background: linear-gradient(0deg, #FF0000, #FFA500);
+            background-size: 137% auto;
+            border-color: #F69022;
+            margin-bottom: 25px;
+            margin-left: 35px; 
+            border-color:#FFA500; 
+            &::before {
+                content: '';
+                width: 41px;
+                height: 38px;
+                background: url(../img/chua/icon-tv.png) center center / contain no-repeat;
+                position: absolute;
+                left: 9px;
+            }
+        }
+        &.lable-videos{
+            &::before {
+                content: '';
+                width: 41px;
+                height: 38px;
+                background: url(../img/chua/icon-video.png) center center / contain no-repeat;
+                position: absolute;
+                left: 9px;
+            }
+        }
+    }
+    .img-videos{ 
         background: url(../img/chua/khung-kqua.png) no-repeat;
         background-size: 100% 100%;
         padding: 35px 35px 55px 35px;
@@ -754,8 +793,85 @@
                 line-height:30px;
             }
         }
-        
+        .modal-dialog{ 
+            background: var(--color-white);
+            padding: 15px;
+            margin-top: 15%;
+            border-radius: 5px;
+            .close{
+                margin-top: -23px;
+                margin-right: -20px;
+                width: 30px;
+                height: 30px;
+                border: 2px solid #000;
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background: var(--color-white);
+                opacity: 1;
+                position: absolute;
+                top: 20px;
+                right: 15px; 
+            }
+        } 
+        .owl-dots{
+            bottom: -40px;
+        }
+    } 
+    @media (max-width:991px) {
+        background: url(../img/chua/bg-tv-mb.jpg);
+        .title-result{ 
+            margin-bottom: 10px;
+            img{
+                max-width: 95%;
+            }
+        }
+        .img-videos{
+            .before-affter{
+                background: url(../img/chua/khung-kq-mb.png)no-repeat;
+                padding:10px 10px 15px 20px;
+
+                .name-customer{
+                    max-width: 254px; 
+                    font-size: 14px;
+                    max-width: 254px;  
+                    line-height: 22px;  
+                    min-height: auto;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+            } 
+            background:none;
+            padding: 10px;
+        }
+        .btn-lable{
+            font-size:16px;
+            width:115px;
+            padding-left: 22px;
+            border-radius: 7px;
+            height: auto;
+            &.lable-tv, &.lable-videos{
+                left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 10px;
+                &::before{
+                    width: 21px;
+                    height: 21px;
+                    left: 5px;
+                    top: 2px;
+                }
+            }
+            &.lable-tv{
+                margin-left: 0px;
+            }
+        }
+        .modal-dialog{
+            padding-top: 25%;
+        } 
     }
+}
+#news{
+
 }
 footer{
     padding: 70px 0px 100px 0px;
