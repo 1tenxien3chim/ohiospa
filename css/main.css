@@ -11273,11 +11273,6 @@ button.scroll-top {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 570px) {
-  #reason .title-reason {
-    font-size: 25px;
-  }
-}
 #reason .item-reason {
   padding: 25px;
   background: url(../img/bg-item-reason.png) no-repeat;
@@ -11293,15 +11288,26 @@ button.scroll-top {
 }
 #reason .item-reason .reason-detail .img-reason {
   overflow: hidden;
-  border-radius: 33px;
+  border-radius: 14px;
 }
 #reason .item-reason .reason-detail .name-reason {
   font-size: 17px;
   margin: 20px 0px;
   text-align: center;
+  background: url(../img/chua/line-nguyen-nhan.png) repeat-x;
+  outline: 1px solid var(--color-white);
+  outline-offset: -3px;
+  padding: 13px;
+  text-transform: uppercase;
+  border-radius: 4px 8px 4px 8px;
 }
 #reason .item-reason .reason-detail .name-reason a {
   color: var(--color-white);
+}
+@media (max-width: 767px) {
+  #reason .item-reason .reason-detail .name-reason {
+    font-size: 13px;
+  }
 }
 #reason .item-reason .reason-detail .desc-reason {
   padding: 0px 25px;
@@ -11334,6 +11340,14 @@ button.scroll-top {
 #reason .item-reason .reason-detail .number .number-item.number-item3 {
   background: url(../img/bg-number-3.png) no-repeat;
   background-size: cover;
+}
+@media (max-width: 991px) {
+  #reason .item-reason {
+    background: #efefef;
+    border: 2px solid var(--color-white);
+    border-radius: 15px;
+    padding: 20px;
+  }
 }
 #reason .slider-reason .reason-detail {
   position: relative;
@@ -11389,7 +11403,9 @@ button.scroll-top {
   #therapy {
     background: url(../img/bg-therapy-mb.jpg) no-repeat;
     background-size: 100% 100%;
-    padding-top: 40px;
+    background-position: top 140px center;
+    padding-top: 160px;
+    margin-top: -140px;
   }
 }
 #therapy .img-therapy img {
@@ -11415,7 +11431,7 @@ button.scroll-top {
   left: -4px;
   width: 25px;
   height: 34px;
-  background: url(../img/chua/icon.png);
+  background: url(../img/chua/icon-khien.png);
 }
 #therapy .content-therapy li p {
   font-size: 13px;
@@ -11495,8 +11511,8 @@ button.scroll-top {
 @media (max-width: 767px) {
   #procedure .box-procedure .item-procedure p {
     bottom: inherit;
-    font-size: 12px;
     top: 65%;
+    font-size: 13px;
   }
 }
 #procedure .box-procedure .step {
@@ -11521,7 +11537,7 @@ button.scroll-top {
     position: absolute;
     content: "";
     width: 83%;
-    height: 10px;
+    height: 5px;
     background-color: var(--color-primary);
     bottom: 26px;
     left: 50%;
@@ -11532,7 +11548,12 @@ button.scroll-top {
     bottom: 25px;
   }
   #procedure .box-procedure .step img {
-    max-width: 35px;
+    max-width: 40px;
+  }
+}
+@media (max-width: 991px) {
+  #procedure {
+    background: var(--color-white);
   }
 }
 
@@ -11588,6 +11609,8 @@ button.scroll-top {
 @media (max-width: 767px) {
   #license .box-license {
     padding: 10px;
+    background: url(../img/chua/khung-1.png) no-repeat;
+    background-size: 100% 100%;
   }
 }
 

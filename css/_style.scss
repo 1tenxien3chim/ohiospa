@@ -164,10 +164,7 @@
         @media(max-width:991px) {
             font-size:29px;
             margin-bottom:40px;
-        }
-        @media(max-width:570px) {
-            font-size:25px;
-        }
+        } 
     }
     .item-reason{
         padding: 25px;
@@ -182,15 +179,24 @@
             text-align: center;
             .img-reason{
                 overflow: hidden;
-                border-radius:33px;
+                border-radius: 14px;
             }
             .name-reason{
                 font-size: 17px;
                 margin: 20px 0px;
                 text-align: center;
+                background: url(../img/chua/line-nguyen-nhan.png)repeat-x;
+                outline: 1px solid var(--color-white);
+                outline-offset: -3px;
+                padding:13px;
+                text-transform: uppercase;
+                border-radius: 4px 8px 4px 8px;
                 a{
                     color: var(--color-white);
                 } 
+                @media (max-width:767px) {
+                    font-size: 13px; 
+                }
                 
             }
             .desc-reason{
@@ -226,6 +232,12 @@
                 }
             } 
         } 
+        @media (max-width:991px) {
+            background: #efefef;
+            border: 2px solid var(--color-white);
+            border-radius: 15px;
+            padding: 20px;
+        }
     } 
     .slider-reason{ 
         .reason-detail{  
@@ -276,8 +288,10 @@
     padding-bottom: 40px;
     @media (max-width:991px) {
         background: url(../img/bg-therapy-mb.jpg) no-repeat;
-        background-size: 100% 100%;
-        padding-top:40px;
+        background-size: 100% 100%; 
+        background-position: top 140px center;
+        padding-top: 160px;
+        margin-top: -140px;
     }
     .img-therapy{ 
         img{
@@ -302,7 +316,7 @@
                 left: -4px;
                 width: 25px;
                 height: 34px;
-                background: url(../img/chua/icon.png);
+                background: url(../img/chua/icon-khien.png);
             }
             p{
                 font-size: 13px;
@@ -377,9 +391,9 @@
                 line-height: 18px;
                 text-align: center;
                 @media (max-width:767px) {
-                    bottom: inherit;
-                    font-size: 12px;
+                    bottom: inherit; 
                     top: 65%;
+                    font-size: 13px;
                 }
             } 
        }
@@ -404,7 +418,7 @@
                     position: absolute;
                     content: "";
                     width:83%;
-                    height: 10px; 
+                    height: 5px;
                     background-color: var(--color-primary);
                     bottom: 26px;
                     left:50%;
@@ -415,11 +429,14 @@
             .step{
                 bottom: 25px;
                 img{
-                    max-width:35px; 
+                    max-width:40px; 
                 }
             }
         }
         
+    }
+    @media (max-width:991px) {
+        background: var(--color-white);
     }
 }
 #license{
@@ -469,6 +486,8 @@
         }
         @media (max-width:767px) {
             padding:10px;
+            background: url(../img/chua/khung-1.png) no-repeat;
+            background-size: 100% 100%;
         }
     }
 }
