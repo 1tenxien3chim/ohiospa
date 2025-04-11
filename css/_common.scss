@@ -121,6 +121,7 @@ a,p,span,strong,del, label{
     --color-red:#ed1f04; 
     --font-primary:'SVN-Gilroy';
     --font-sub:'SVN-Gilroy-medium';
+    --font-sales:'BebasNeue-Regular';
 }
 @font-face {
     font-family: 'SVN-Gilroy';
@@ -138,6 +139,17 @@ a,p,span,strong,del, label{
          url('../fonts/SVN-Gilroy.woff2') format('woff2'), 
          url('../fonts/SVN-Gilroy.woff') format('woff'), 
          url('../fonts/SVN-Gilroy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('../fonts/BebasNeue-Regular.eot'),
+         url('../fonts/BebasNeue-Regular.woff2') format('woff2'), 
+         url('../fonts/BebasNeue-Regular.woff') format('woff'), 
+         url('../fonts/BebasNeue-Regular') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -446,7 +458,7 @@ a,p,span,strong,del, label{
     .nav-menu > .menu-item > .menu-link {
         display: block;
         font-style: normal;
-        font-size: 16px; 
+        font-size: 12px; 
         text-transform: uppercase;
         color:var(--color-white); 
         padding: 16px 0px;

@@ -178,6 +178,26 @@ if (window.innerWidth > 320) {
         }
     });
 }
+//  click one page
+$('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+// sticky header
+window.addEventListener('scroll', function() {
+    let header = document.querySelector('.header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
 $(function () {
     $(".slider-reason").owlCarousel({
         items: 2,
