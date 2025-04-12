@@ -9269,12 +9269,13 @@ a, p, span, strong, del, label {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
-  color: #a0a0a0;
+  background: var(--color-primary);
+  color: var(--color-white);
   text-align: center;
   font-size: 23px;
   line-height: 40px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
 }
 
 /*** Scroll To Top style ***/
@@ -9295,8 +9296,8 @@ a, p, span, strong, del, label {
 }
 
 .scroll-top:hover {
-  background: #FFC238;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .scroll-top span::before {
@@ -9766,6 +9767,9 @@ button.scroll-top {
     width: 100% !important;
     max-width: 1320px !important;
   }
+  .name-dtor {
+    margin-bottom: 15px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -9981,6 +9985,9 @@ button.scroll-top {
   overflow: hidden;
   border-radius: 14px;
 }
+#reason .item-reason .reason-detail .img-reason img {
+  transition: all 0.5s ease;
+}
 #reason .item-reason .reason-detail .name-reason {
   font-size: 17px;
   margin: 20px 0px;
@@ -10031,6 +10038,12 @@ button.scroll-top {
 #reason .item-reason .reason-detail .number .number-item.number-item3 {
   background: url(../img/bg-number-3.png) no-repeat;
   background-size: cover;
+}
+#reason .item-reason .reason-detail .img-reason:hover {
+  cursor: pointer;
+}
+#reason .item-reason .reason-detail .img-reason:hover img {
+  transform: scale(1.05);
 }
 @media (max-width: 991px) {
   #reason .item-reason {
@@ -10101,12 +10114,18 @@ button.scroll-top {
 }
 #therapy .img-therapy img {
   max-width: 100%;
+  transition: all 0.5s ease;
+}
+#therapy .img-therapy:hover img {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 #therapy .content-therapy {
   margin-top: 70px;
   padding: 20px;
   background: url(../img/bg-chua-tri.png) no-repeat;
   background-size: 100% 100%;
+  transition: all 0.5s ease;
 }
 #therapy .content-therapy li {
   background: url(../img/chua/bg-item-therapy.png) no-repeat;
@@ -10123,6 +10142,7 @@ button.scroll-top {
   width: 25px;
   height: 34px;
   background: url(../img/chua/icon-khien.png);
+  background-size: cover;
 }
 #therapy .content-therapy li p {
   font-size: 13px;
@@ -10130,6 +10150,10 @@ button.scroll-top {
   margin-bottom: 0px;
   line-height: 16px;
   text-align: justify;
+}
+#therapy .content-therapy:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 @media (max-width: 991px) {
   #therapy .img-therapy {
@@ -10206,6 +10230,13 @@ button.scroll-top {
     font-size: 13px;
   }
 }
+@media (max-width: 375px) {
+  #procedure .box-procedure .item-procedure p {
+    bottom: inherit;
+    top: 65%;
+    font-size: 12px;
+  }
+}
 #procedure .box-procedure .step {
   position: absolute;
   bottom: -65px;
@@ -10270,6 +10301,10 @@ button.scroll-top {
 }
 #license .box-license .box-bk img {
   max-width: 100%;
+  transition: all 0.5s ease;
+}
+#license .box-license .box-bk:hover img {
+  transform: scale(1.05);
 }
 #license .box-license .bk-dsc, #license .box-license .box-bk-mb {
   position: relative;
@@ -10287,10 +10322,22 @@ button.scroll-top {
   line-height: 18px;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #license .box-license .bk-dsc p, #license .box-license .box-bk-mb p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 @media (max-width: 767px) {
   #license .box-license .bk-dsc p, #license .box-license .box-bk-mb p {
     bottom: inherit;
     font-size: 12px;
+    top: 72%;
+  }
+}
+@media (max-width: 375px) {
+  #license .box-license .bk-dsc p, #license .box-license .box-bk-mb p {
+    font-size: 11px;
     top: 72%;
   }
 }
@@ -10453,6 +10500,11 @@ button.scroll-top {
     left: 3px;
   }
 }
+@media (max-width: 375px) {
+  #doctor .profile .desc {
+    top: 62%;
+  }
+}
 
 .slider-docter .owl-nav .owl-prev, .slider-facilities .owl-nav .owl-prev, .img-videos .owl-nav .owl-prev, .slider-news .owl-nav .owl-prev {
   left: -60px;
@@ -10512,6 +10564,15 @@ button.scroll-top {
   max-width: 100%;
   text-align: center;
   margin-top: 100px;
+  transition: all 0.5s ease;
+}
+@media (min-width: 992px) {
+  #facilities .img-content img {
+    transform: scale(1.1);
+  }
+}
+#facilities .img-content:hover img {
+  transform: scale(1.15);
 }
 @media (max-width: 991px) {
   #facilities .img-content img {
@@ -10842,9 +10903,19 @@ button.scroll-top {
 }
 
 #clear-mao {
-  padding: 80px 0px 115px;
-  background: url(../img/chua/bg-sach.jpg) no-repeat;
+  padding: 120px 0px 100px;
+  background: url(../img/chua/bg-sach.png) no-repeat;
   background-size: 100% 100%;
+}
+#clear-mao .item img {
+  max-width: 100%;
+  transform: scale(1.405);
+}
+@media (min-width: 992px) {
+  #clear-mao .box-contact-form {
+    position: absolute;
+    top: -50px;
+  }
 }
 #clear-mao .title-form {
   margin-bottom: 20px;
@@ -10863,12 +10934,12 @@ button.scroll-top {
   text-align: center;
 }
 #clear-mao form .text-form {
-  font-size: 85px;
+  font-size: 100px;
   font-family: var(--font-sales);
   color: var(--color-red);
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  padding-left: 16%;
 }
 #clear-mao form .text-form span {
   font-family: var(--font-sales);
@@ -10876,13 +10947,13 @@ button.scroll-top {
   display: inline-block;
   margin-right: 10px;
   position: absolute;
-  top: 30px;
   margin-left: -55px;
 }
 #clear-mao form .sub-form {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 25px;
   font-size: 16px;
+  text-transform: uppercase;
   color: var(--color-primary);
   font-family: var(--font-primary);
 }
@@ -10938,11 +11009,24 @@ button.scroll-top {
 #clear-mao form .box input::-ms-input-placeholder { /* Edge 12 -18 */
   color: var(--color-primary);
 }
+#clear-mao .btn-register {
+  display: inline-flex;
+  min-width: 130px;
+  height: 30px;
+  background: var(--color-red);
+  border-radius: 15px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 rgba(255, 55, 55, 0.5);
+  animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
 @media (max-width: 991px) {
   #clear-mao {
     background: url(../img/chua/bg-sach-mb.png) no-repeat;
     background-size: 100% 100%;
-    padding: 480px 0px 115px;
+    padding: 460px 0px 115px;
   }
   #clear-mao .title-form {
     text-align: center;

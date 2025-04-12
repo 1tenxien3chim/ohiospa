@@ -2,7 +2,10 @@
     .container{
         width: 100%!important;
         max-width: 1320px!important;
-     }
+    }
+    .name-dtor{
+        margin-bottom: 15px;
+    } 
 }
 @media (min-width:1200px) {
     .container{
@@ -219,6 +222,9 @@
             .img-reason{
                 overflow: hidden;
                 border-radius: 14px;
+                img{
+                    transition: all 0.5s ease;
+                }
             }
             .name-reason{
                 font-size: 17px;
@@ -270,6 +276,14 @@
                     }
                 }
             } 
+            &{
+                .img-reason:hover{
+                    cursor: pointer;
+                    img{
+                        transform: scale(1.05);
+                    }
+                } 
+            }
         } 
         @media (max-width:991px) {
             background: #efefef;
@@ -335,13 +349,21 @@
     .img-therapy{ 
         img{
             max-width: 100%;
+            transition: all 0.5s ease;
         } 
+        &:hover{
+            img{
+                cursor: pointer;
+                transform: scale(1.05);
+            } 
+        }
     }
     .content-therapy{
         margin-top:70px;
         padding: 20px;
         background: url(../img/bg-chua-tri.png)no-repeat;
         background-size: 100% 100%; 
+        transition: all 0.5s ease;
         li{
             background: url(../img/chua/bg-item-therapy.png) no-repeat;
             background-size: 100% 100%;
@@ -356,6 +378,7 @@
                 width: 25px;
                 height: 34px;
                 background: url(../img/chua/icon-khien.png);
+                background-size: cover;
             }
             p{
                 font-size: 13px;
@@ -364,6 +387,10 @@
                 line-height: 16px;
                 text-align: justify;
             }
+        }
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
         }
     }
     @media (max-width:991px) {
@@ -434,6 +461,11 @@
                     top: 65%;
                     font-size: 13px;
                 }
+                @media (max-width:375px) {
+                    bottom: inherit; 
+                    top: 65%;
+                    font-size: 12px;
+                }
             } 
        }
        .step{
@@ -494,13 +526,19 @@
         background-size: 100% 100%;
         padding: 40px;
         .box-bk{
-            margin-bottom: 25px;
+            margin-bottom: 25px;  
             img{
                 max-width: 100%;
+                transition: all 0.5s ease;
+            } 
+            &:hover{
+                img {
+                    transform: scale(1.05);
+                }
             }
         }
         .bk-dsc, .box-bk-mb{
-            position: relative;  
+            position: relative;   
             img{
                 max-width: 100%;
             }
@@ -512,10 +550,18 @@
                 color: var(--color-white);
                 font-size: 14px;
                 line-height: 18px;
-                text-align: center;
+                text-align: center; 
+                @media (min-width:768px) and (max-width:991px){
+                    font-size: 16px;
+                    line-height: 25px;
+                }
                 @media (max-width:767px) {
                     bottom: inherit;
                     font-size: 12px;
+                    top: 72%;
+                }
+                @media (max-width:375px) { 
+                    font-size: 11px;
                     top: 72%;
                 }
             }  
@@ -527,7 +573,7 @@
             padding:10px;
             background: url(../img/chua/khung-1.png) no-repeat;
             background-size: 100% 100%;
-        }
+        } 
     }
 }
 
@@ -679,6 +725,10 @@
                     }
                 }
             }
+            @media (max-width:375px) {
+                top: 62%;
+            
+            }
         }
     } 
 }
@@ -737,11 +787,20 @@
         }
     }
     .img-content{
-        img{
+        img{ 
             max-width: 100%;
             text-align: center;
             margin-top: 100px;
+            transition: all 0.5s ease;
+            @media (min-width:992px) {
+                transform: scale(1.1);
+            }
         } 
+        &:hover{
+            img{
+                transform: scale(1.15);
+            }
+        }
         @media (max-width:991px) {
             img{
                 margin-top:40px;
@@ -1080,9 +1139,22 @@
     }
 }
 #clear-mao{
-    padding: 80px 0px 115px;
-    background: url(../img/chua/bg-sach.jpg) no-repeat;
+    padding: 120px 0px 100px;
+    background: url(../img/chua/bg-sach.png) no-repeat;
     background-size: 100% 100%;
+    .item{
+        img{
+            max-width: 100%; 
+            transform: scale(1.405);
+        }
+        
+    }
+    .box-contact-form{ 
+        @media (min-width:992px) {
+            position: absolute;
+            top:-50px
+        } 
+    }
     .title-form{ 
         img{
             max-width: 100%;
@@ -1099,26 +1171,26 @@
         border:8px solid var(--color-white);
         text-align: center;
         .text-form{
-            font-size:85px;
+            font-size:100px;
             font-family: var(--font-sales);
             color: var(--color-red);
             justify-content: center;
-            align-items: center;
-            font-weight: bold;
+            align-items: center; 
+            padding-left: 16%;
             span{
                 font-family: var(--font-sales);
                 font-size:45px;
                 display: inline-block;
                 margin-right: 10px;
-                position: absolute;
-                top:30px;
+                position: absolute; 
                 margin-left: -55px;
             }
         }
-        .sub-form{
-            margin-top: 15px;
+        .sub-form{ 
+            margin-top: 25px;
             margin-bottom:25px;
             font-size: 16px;
+            text-transform: uppercase;
             color: var(--color-primary);
             font-family: var(--font-primary);
         }
@@ -1177,11 +1249,27 @@
             }
             
         }
-    }   
+    }  
+    .btn-register{
+        display: inline-flex;
+        min-width: 130px;
+        height: 30px;
+        background:var(--color-red);
+        border-radius: 15px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0 0 rgba(255, 55, 55, 0.5);
+        -webkit-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        -moz-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        -ms-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+    } 
     @media (max-width:991px) {
         background: url(../img/chua/bg-sach-mb.png) no-repeat;
         background-size: 100% 100%;  
-        padding: 480px 0px 115px;
+        padding: 460px 0px 115px;
         .title-form{
             text-align: center;
             img{

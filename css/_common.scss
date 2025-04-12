@@ -690,12 +690,13 @@ a,p,span,strong,del, label{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #fff;
-    color: #a0a0a0;
+    background: var(--color-primary);
+    color: var(--color-white);
     text-align: center;
     font-size: 23px;
     line-height: 40px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
 }
 /*** Scroll To Top style ***/
 
@@ -715,8 +716,8 @@ a,p,span,strong,del, label{
     background: #fff;
 }
 .scroll-top:hover{
-    background: #FFC238;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-white);
 }
 .scroll-top span::before {
     font-size: 55px;

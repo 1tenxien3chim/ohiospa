@@ -312,10 +312,10 @@ $(function () {
             0: { items: 1,}
         },
         rewind: false,
-        autoplay: false,
+        autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 5000,
-        smartSpeed: 1000, //slide speed smooth
+        smartSpeed: 2000, //slide speed smooth
         dots: true,
         dotsEach: false,
         loop: true,
