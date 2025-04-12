@@ -1139,20 +1139,21 @@
     }
 }
 #clear-mao{
-    padding: 120px 0px 100px;
+    padding: 140px 0px 170px;
     background: url(../img/chua/bg-sach.png) no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
     .item{
         img{
             max-width: 100%; 
-            transform: scale(1.405);
+            transform: scale(1.8);
         }
         
     }
     .box-contact-form{ 
         @media (min-width:992px) {
             position: absolute;
-            top:-50px
+            top: -60px;
         } 
     }
     .title-form{ 
@@ -1279,7 +1280,156 @@
     }
     
 }
-
+#regiter{ 
+    @media (min-width: 768px){
+        .modal-dialog{
+            width:340px!important;
+        }
+    }
+    .modal-content{
+        max-width:340px;
+        min-height:345px; 
+        .modal-body{
+            padding: 10px;
+        }
+        .close{
+            font-size: 30px;
+            margin-top: -10px;
+        }
+    }
+    form{
+        max-width: 340px;
+        min-height: 345px;
+        padding:30px 15px 15px 15px;
+        margin: auto;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+        border:8px solid var(--color-white);
+        text-align: center;
+        .text-form{
+            font-size:100px;
+            font-family: var(--font-sales);
+            color: var(--color-red);
+            justify-content: center;
+            align-items: center; 
+            padding-left: 16%;
+            span{
+                font-family: var(--font-sales);
+                font-size:45px;
+                display: inline-block;
+                margin-right: 10px;
+                position: absolute; 
+                margin-left: -55px;
+            }
+        }
+        .sub-form{ 
+            margin-top: 25px;
+            margin-bottom:25px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            font-family: var(--font-primary);
+        }
+        .box{  
+            input, select{
+                border-radius:10px;
+                border:2px solid #b999d2;
+                font-size: 16px;
+            }
+            .custom-dropdown{
+                position: relative;
+                color: var(--color-primary);
+                border-radius:10px;
+                border:2px solid #b999d2;
+                font-size: 16px; 
+                text-align: left;
+                padding: 3px 12px;
+                background:url(../img/chua/icon.png) no-repeat, #fff; 
+                background-position: right 10px center; 
+                margin-bottom:15px;
+            }
+            .dropdown-selected { 
+                cursor: pointer;  
+            }
+            .dropdown-options {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                border: 1px solid #ccc;
+                display: none;
+                z-index: 10;
+            }
+            .dropdown-option {
+                padding: 10px;
+                cursor: pointer;
+            }
+              
+            .dropdown-option:hover {
+            background-color: #f7931e;
+            color: white;
+            }
+            select{
+                color:var(--color-primary);
+            }
+            input{
+                &::placeholder {
+                    color:var(--color-primary);
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                &::-ms-input-placeholder { /* Edge 12 -18 */
+                    color:var(--color-primary);
+                }
+            }
+            
+        }
+    }  
+    .btn-register{
+        display: inline-flex;
+        min-width: 130px;
+        height: 30px;
+        background:var(--color-red);
+        border-radius: 15px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0 0 rgba(255, 55, 55, 0.5);
+        -webkit-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        -moz-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        -ms-animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+    } 
+}
+#tv-images, #tv-video{
+    .close{    
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        font-size: 30px;
+        margin-top: -10px;
+        z-index: 1;
+        padding: 5px;
+    }
+    .modal-body{
+        padding-left: 0px;
+        padding-bottom: 0px;
+        .list-tv-imange{
+            display: flex;
+            flex-wrap:wrap;
+            li{
+                max-width: calc(33.3333% - 15px);
+                margin-left: 15px; 
+                margin-bottom: 15px; 
+                img{
+                    max-width: 100%;
+                }
+            }
+        } 
+    }
+}
 footer{
     padding: 70px 0px 100px 0px;
     background-color: var(--color-primary);

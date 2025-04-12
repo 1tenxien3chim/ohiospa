@@ -25,7 +25,50 @@
                             <span><img src="img/icon-phone.png" alt=""></span> 
                             0919.005.523
                         </a>
-                        <a href="" class="btn btn-regiter">đăng ký tư vấn</a>
+                        <a href="" class="btn btn-regiter"  data-toggle="modal" data-target="#regiter">đăng ký tư vấn</a>
+                    </div>
+                </div>
+                <div id="regiter" class="modal fade" role="dialog">
+                    <div class="modal-dialog"> 
+                      <!-- Modal content-->
+                      <div class="modal-content"> 
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <form action="">
+                                <div class="text-form"><span>off</span>65%</div>
+                                <div class="sub-form">
+                                    đăng ký đặt lịch tư vấn bác sĩ
+                                </div>
+                                <div class="box">
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="Họ và tên *">
+                                    </div>
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="Số điện thoại">
+                                    </div>  
+                                    <div class="custom-dropdown" onclick="toggleDropdown(this)">
+                                        <div class="dropdown-selected">Chi nhánh</div>
+                                        <div class="dropdown-options">
+                                          <div class="dropdown-option">Hà Nội</div>
+                                          <div class="dropdown-option">Nghệ An</div>
+                                          <div class="dropdown-option">Đà Nẵng</div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-dropdown" onclick="toggleDropdown(this)">
+                                        <div class="dropdown-selected">Tình trạng của bạn</div>
+                                        <div class="dropdown-options">
+                                          <div class="dropdown-option">Hà Nội</div>
+                                          <div class="dropdown-option">Nghệ An</div>
+                                          <div class="dropdown-option">Đà Nẵng</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> 
+                                        <a class="btn-register">Đăng ký</a>
+                                    </div>  
+                                </div> 
+                            </form>
+                        </div> 
+                      </div> 
                     </div>
                 </div>
             </div>
@@ -78,7 +121,7 @@
                                         <a href="#news" class="menu-link">nhận ưu đãi</a>
                                     </li> 
                                     <div class="visible-sm visible-xs call-mb">
-                                        <a href="" class="btn btn-regiter">đăng ký tư vấn</a>
+                                        <a href="" class="btn btn-regiter" data-toggle="modal" data-target="#regiter">đăng ký tư vấn</a>
                                     </div>   
                                 </ul>
                             </div>
@@ -836,10 +879,10 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-md-7 hidden-sm hidden-xs">
-                    <a href=""class="btn-lable lable-tv">Hình Ảnh</a>
+                    <a href=""class="btn-lable lable-tv" data-toggle="modal" data-target="#tv-images">Hình Ảnh</a>
                 </div>
                 <div class="col-md-5 hidden-sm hidden-xs">
-                    <a href=""class="btn-lable lable-videos">Video</a>
+                    <a href=""class="btn-lable lable-videos"data-toggle="modal" data-target="#tv-video" >Video</a>
                 </div>
                 <div class="clearfix"></div>
                 <div class="img-videos owl-carousel">
@@ -964,6 +1007,43 @@
                         </div>
                     </div>
                 </div> 
+                <div id="tv-images" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg"> 
+                      <!-- Modal content-->
+                      <div class="modal-content"> 
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-body ">
+                            <ul class="list-tv-imange">
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-1.png" alt=""></a></li>
+                            </ul>
+                        </div> 
+                      </div> 
+                    </div>
+                </div>
+                <div id="tv-video" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg"> 
+                      <!-- Modal content-->
+                      <div class="modal-content"> 
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-body ">
+                            <ul class="list-tv-imange">
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li>
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                                <li><a href=""><img src="img/tv-video1.png" alt=""></a></li> 
+                            </ul>
+                        </div> 
+                      </div> 
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1063,7 +1143,7 @@
                         <h3 class="title-form">
                             <img src="img/chua/img-sach.png" alt="">
                         </h3>
-                        <form action=""">
+                        <form action="">
                             <div class="text-form"><span>off</span>65%</div>
                             <div class="sub-form">
                                 đăng ký đặt lịch tư vấn bác sĩ
