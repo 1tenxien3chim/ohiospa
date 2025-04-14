@@ -312,13 +312,13 @@ $(function () {
             0: { items: 1,}
         },
         rewind: false,
-        autoplay: true,
+        autoplay: false,
         autoplayHoverPause: true,
         autoplayTimeout: 5000,
         smartSpeed: 2000, //slide speed smooth
         dots: true,
         dotsEach: false,
-        loop: true,
+        loop: false,
         nav: false,
         navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
         
