@@ -10912,6 +10912,11 @@ button.scroll-top {
   max-width: 100%;
   transform: scale(1.8);
 }
+@media (max-width: 767px) {
+  #clear-mao .item img {
+    transform: scale(1.2);
+  }
+}
 @media (min-width: 992px) {
   #clear-mao .box-contact-form {
     position: absolute;
@@ -11027,7 +11032,7 @@ button.scroll-top {
   #clear-mao {
     background: url(../img/chua/bg-sach-mb.png) no-repeat;
     background-size: 100% 100%;
-    padding: 460px 0px 115px;
+    padding: 60px 0px 115px;
   }
   #clear-mao .title-form {
     text-align: center;
@@ -11045,13 +11050,30 @@ button.scroll-top {
 #regiter .modal-content {
   max-width: 340px;
   min-height: 345px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 #regiter .modal-content .modal-body {
   padding: 10px;
+  background: url(../img/chua/bg-popup.png) no-repeat;
+  background-size: 100% 100%;
 }
 #regiter .modal-content .close {
   font-size: 30px;
-  margin-top: -10px;
+  margin-top: 10px;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  background: var(--color-white);
+  color: #000;
 }
 #regiter form {
   max-width: 340px;
@@ -11315,4 +11337,8 @@ footer .box-f .desc-box-f p {
 }
 .sticky .nav-menu .menu-item .menu-link {
   padding: 10px 0px;
+}
+
+.title-popup-mb {
+  margin: 20px 0px;
 }/*# sourceMappingURL=main.css.map */

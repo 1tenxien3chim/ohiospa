@@ -935,7 +935,7 @@
                 opacity: 1;
                 position: absolute;
                 top: 20px;
-                right: 15px; 
+                right: 15px;  
             }
         } 
         .owl-dots{
@@ -1147,6 +1147,9 @@
         img{
             max-width: 100%; 
             transform: scale(1.8);
+            @media (max-width:767px) {
+                transform: scale(1.2);
+            }
         }
         
     }
@@ -1270,7 +1273,7 @@
     @media (max-width:991px) {
         background: url(../img/chua/bg-sach-mb.png) no-repeat;
         background-size: 100% 100%;  
-        padding: 460px 0px 115px;
+        padding: 60px 0px 115px;
         .title-form{
             text-align: center;
             img{
@@ -1289,12 +1292,29 @@
     .modal-content{
         max-width:340px;
         min-height:345px; 
+        border-radius: 30px;
+        overflow: hidden; 
         .modal-body{
             padding: 10px;
+            background: url(../img/chua/bg-popup.png)no-repeat;
+            background-size: 100% 100%;
         }
         .close{
             font-size: 30px;
-            margin-top: -10px;
+            margin-top: 10px;
+            opacity: 1;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            background: var(--color-white);
+            color: #000;
         }
     }
     form{
@@ -1570,4 +1590,7 @@ footer{
             }
         }
     }
+}
+.title-popup-mb {
+    margin: 20px 0px;
 }
