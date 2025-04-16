@@ -11279,6 +11279,28 @@ button.scroll-top {
   padding: 5px !important;
 }
 
+.list-call {
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-call li {
+  display: inline-block;
+  margin-top: 5px;
+  animation-name: pulse2;
+  -webkit-animation-name: pulse2;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
 footer {
   padding: 70px 0px 100px 0px;
   background-color: var(--color-primary);
