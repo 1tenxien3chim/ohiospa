@@ -10547,7 +10547,7 @@ button.scroll-top {
 }
 
 #facilities {
-  background: url(../img/chua/bg-facilities.jpg);
+  background: url(../img/chua/bg-facilities.jpg) no-repeat;
   background-size: 100% 100%;
   padding: 40px 0px 40px;
   overflow: hidden;
