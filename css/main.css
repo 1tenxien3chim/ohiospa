@@ -9776,6 +9776,9 @@ button.scroll-top {
     width: 100%;
     max-width: 1140px;
   }
+  .modal-dialog {
+    min-width: 1100px;
+  }
 }
 @media (min-width: 992px) {
   .row-5 {
@@ -10571,6 +10574,7 @@ button.scroll-top {
   text-align: center;
   margin-top: 100px;
   transition: all 0.5s ease;
+  margin-left: 5%;
 }
 @media (min-width: 1199px) {
   #facilities .img-content img {
@@ -10702,6 +10706,12 @@ button.scroll-top {
   padding: 10px 10px 10px 20px;
   line-height: 30px;
 }
+@media (max-width: 767px) {
+  #result .img-videos .before-affter .name-customer {
+    text-align: center;
+    padding: 10px;
+  }
+}
 #result .img-videos .modal-dialog {
   background: var(--color-white);
   padding: 15px;
@@ -10761,8 +10771,7 @@ button.scroll-top {
     height: auto;
   }
   #result .btn-lable.lable-tv, #result .btn-lable.lable-videos {
-    left: 50%;
-    transform: translate(-50%);
+    left: calc(50% - 50px);
     margin-bottom: 10px;
   }
   #result .btn-lable.lable-tv::before, #result .btn-lable.lable-videos::before {
@@ -11247,7 +11256,6 @@ button.scroll-top {
   padding-bottom: 15px;
   padding-top: 30px;
   padding-right: 45px;
-  overflow: hidden;
 }
 #tv-images .modal-body .list-tv-imange, #tv-video .modal-body .list-tv-imange {
   display: flex;

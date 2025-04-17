@@ -6,12 +6,15 @@
     .name-dtor{
         margin-bottom: 15px;
     } 
-}
+} 
 @media (min-width:1200px) {
     .container{
        width: 100%;
        max-width: 1140px;
     }  
+    .modal-dialog{
+        min-width: 1100px;
+    }
 }
 @media (min-width:992px) {
     .row-5{
@@ -796,6 +799,7 @@
             text-align: center;
             margin-top: 100px; 
             transition: all 0.5s ease;
+            margin-left: 5%;
             @media (min-width:1199px) {
                 margin-top:210px; 
             }
@@ -930,13 +934,17 @@
                 color: var(--color-white);
                 padding: 10px 10px 10px 20px;
                 line-height:30px;
+                @media (max-width:767px) {
+                    text-align: center;
+                    padding: 10px;
+                }
             }
         }
         .modal-dialog{ 
             background: var(--color-white);
             padding: 15px;
             margin-top: 15%;
-            border-radius: 5px;
+            border-radius: 5px; 
             .close{
                 margin-top: -23px;
                 margin-right: -20px;
@@ -990,8 +998,7 @@
             border-radius: 7px;
             height: auto;
             &.lable-tv, &.lable-videos{
-                left: 50%;
-                transform: translate(-50%);
+                left: calc(50% - 50px); 
                 margin-bottom: 10px;
                 &::before{
                     width: 21px;
@@ -1009,6 +1016,7 @@
         } 
     }
 }
+
 #news{
     padding: 50px 0px 40px;
     background: url(../img/chua/bg-news.jpg);
@@ -1469,7 +1477,7 @@
         border: 10px solid #d2d2d2;
         border-radius: 25px;
         max-height: 482px; 
-        overflow-y: scroll;
+        overflow-y: scroll; 
         &::-webkit-scrollbar-track {
             position: absolute;
             right: 15px;
@@ -1486,8 +1494,7 @@
         padding-left: 15px;
         padding-bottom: 15px;
         padding-top: 30px;
-        padding-right: 45px;
-        overflow: hidden;
+        padding-right: 45px; 
         .list-tv-imange{
             display: flex;
             flex-wrap:wrap;
@@ -1514,6 +1521,7 @@
 #myvideo{
     .modal-content{
         max-height: 350px;
+
         overflow-y: hidden !important;
         .modal-body{
             padding: 5px!important;
