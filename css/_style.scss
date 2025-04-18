@@ -976,7 +976,7 @@
         }
         .img-videos{
             .before-affter{
-                background: url(../img/chua/khung-kq-mb.jpg)no-repeat;
+                background: url(../img/chua/khung-kq-mb.png)no-repeat;
                 background-size: 100% 100%; 
                 padding: 10px;
                 margin-bottom: 15px;
@@ -1017,6 +1017,29 @@
             padding-top: 25%;
         } 
     }
+    #Modal-video-khachhang{
+        .modal-dialog{
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            .close{
+                margin-top: -23px;
+                margin-right: -20px;
+                width: 30px;
+                height: 30px;
+                border: 2px solid #000;
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background: var(--color-white);
+                opacity: 1;
+                position: absolute;
+                top: 20px;
+                right: 15px;
+                color: #000;
+            }
+        }
+    } 
 }
 
 #news{
@@ -1313,6 +1336,7 @@
     @media (min-width: 768px){
         .modal-dialog{
             width:340px!important;
+            min-width: inherit!important;
         }
     }
     .modal-content{
@@ -1479,7 +1503,7 @@
     .modal-content{
         border: 10px solid #d2d2d2;
         border-radius: 25px;
-        max-height: 482px; 
+        max-height:630px; 
         overflow-y: scroll; 
         &::-webkit-scrollbar-track {
             position: absolute;
@@ -1553,7 +1577,8 @@
     }
 }
 footer{
-    padding: 70px 0px 100px 0px;
+    padding: 70px 0px 30px 0px;
+    margin-top: -30px;
     background-color: var(--color-primary);
     .social-f{
         margin-top:30px;
