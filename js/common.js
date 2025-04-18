@@ -197,6 +197,25 @@ window.addEventListener('scroll', function() {
     let header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
+// auto popup
+
+window.addEventListener('load', function () {
+    setTimeout(function () { 
+        document.querySelector('#regiter').classList.add('in');
+        document.querySelector('#regiter').setAttribute('aria-hidden', 'false');
+        document.querySelector('#regiter').style.display = 'block';
+    }, 15000); // 15 giây = 15000 ms
+    //click remove
+    document.querySelector('.close[data-dismiss="modal"]').addEventListener('click', function () {
+        const element = document.querySelector('#regiter');
+        if (element) {
+            element.classList.remove('in');
+            element.setAttribute('aria-hidden', 'true');
+            element.style.display = 'none';
+        }
+    });
+});
+
 
 $(function () {
     $(".slider-reason").owlCarousel({
